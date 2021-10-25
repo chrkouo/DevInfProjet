@@ -31,7 +31,7 @@ CREATE SCHEMA IF NOT EXISTS `h21DevInfo`
 DEFAULT CHARACTER SET `utf8mb4`
 COLLATE `utf8mb4_unicode_ci`;
 
-DROP TABLE IF EXISTS `users`;
+-- DROP TABLE IF EXISTS `h21DevInfo`.`users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
@@ -44,10 +44,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'admin', 'chris@gmail.com', '1234New'),
-(2, 'mercy', 'mercy@gmail.com', '5678New'),
-(3, 'rob', 'rob@gmail.com', '90New');
+INSERT INTO `h21DevInfo`.`users` (`id`, `username`, `email`, `password`) VALUES
+(1, 'admin', 'chris@gmail.com', 'c61a96223641a78499f2e4daff58c0ac94c5466346cb299ac8fc8771b1cd60b8'),
+(2, 'mercy', 'mercy@gmail.com', 'dec8b922033a772b384a300390172458d2b9453e98f4b79982faba545b3f57d2'),
+(3, 'rob', 'rob@gmail.com', '71213ede44d4d5effe3842b9b910b1711111db41e0b9405b1749aebed1ba9d62');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
